@@ -1,0 +1,21 @@
+nodes:
+  - id: basis-reguliere-expressies
+    title: "Basis reguliere expressies"
+  - id: jinja-basics
+    title: "Basis Jinja"
+  - id: werken-met-paden
+    title: "Werken met paden"
+  - id: enumerate
+    title: "Enumerate"
+  - id: list-comprehensions
+    title: "List comprehensions"
+  - id: dictionary-comprehensions
+    title: "Dictionary comprehensions"
+all_type_edges:
+  - start_id: enumerate
+    end_id: list-comprehensions
+  - start_id: list-comprehensions
+    end_id: dictionary-comprehensions
+any_type_edges: []
+roots: []
+node_plugins: []
