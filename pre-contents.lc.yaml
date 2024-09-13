@@ -11,11 +11,42 @@ nodes:
     title: "List comprehensions"
   - id: dictionary-comprehensions
     title: "Dictionary comprehensions"
+  - id: visitor-pattern
+    title: "Visitor pattern"
+  - id: transformer-pattern
+    title: "Transformer pattern"
+  - id: syntaxbomen-basis
+    title: "Basis syntaxbomen"
+  - id: libcst-basis-visitor
+    title: "Basis LibCST met Visitor"
+  - id: libcst-basis-transformer
+    title: "Basis LibCST met Transformer"
+  - id: pyspellchecker-basis
+    title: "Basis pyspellchecker"
+  - id: ast-module-basis
+    title: "Basis AST module"
 all_type_edges:
   - start_id: enumerate
     end_id: list-comprehensions
   - start_id: list-comprehensions
     end_id: dictionary-comprehensions
+  - start_id: basis-reguliere-expressies
+    end_id: syntaxbomen-basis
+  - start_id: syntaxbomen-basis
+    end_id: libcst-basis-visitor
+  - start_id: visitor-pattern
+    end_id: libcst-basis-visitor
+  - start_id: visitor-pattern
+    end_id: transformer-pattern
+  - start_id: transformer-pattern
+    end_id: libcst-basis-transformer
+  - start_id: visitor-pattern
+    end_id: ast-module-basis
 any_type_edges: []
 roots: []
-node_plugins: []
+node_plugins:
+  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_assignments_plugin.so"
+    require_solutions: False
+pre_cluster_plugins:
+  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+
