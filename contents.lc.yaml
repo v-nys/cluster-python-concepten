@@ -4,6 +4,11 @@ nodes:
     assignments:
       - id: spelden-en-hooibergen
         title: "Spelden en hooibergen"
+  - id: groepen-in-reguliere-expressies
+    title: "Groepen in reguliere expressies"
+    assignments:
+      - id: onderdelen-emailadres
+        title: "Onderdelen van een e-mailadres"
   - id: jinja-basics
     title: "Basis Jinja"
     assignments:
@@ -65,6 +70,8 @@ nodes:
       - id: code-normaliseren
         title: "Code normaliseren"
 all_type_edges:
+  - start_id: basis-reguliere-expressies
+    end_id: groepen-in-reguliere-expressies
   - start_id: enumerate
     end_id: list-comprehensions
   - start_id: list-comprehensions
