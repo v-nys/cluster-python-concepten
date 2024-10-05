@@ -71,6 +71,9 @@ nodes:
         title: "Code normaliseren"
   - id: sqlite-basis
     title: "Basis SQLite"
+    assignments:
+      - id: sqlite-experiment
+        title: "SQLite experiment"
   - id: flask-basis
     title: "Basis Flask"
   - id: flask-static
@@ -79,14 +82,29 @@ nodes:
     title: "Basis logging"
   - id: flask-redirects
     title: "Redirects met Flask"
+    assignments:
+      - id: go-to-ap
+        title: "Ga naar AP"
   - id: flask-formulieren-basis
     title: "Basis formulieren in Flask"
   - id: hogere-orde-functies
     title: "Hogere orde functies"
+    assignments:
+      - id: recepten
+        title: "recepten"
+      - id: leveranciers
+        title: "leverancieers"
+  - id: args-kwargs
+    title: "Args en kwargs"
   - id: decorators-basis
     title: "Basis decorators"
-  - id: flask-restful-basis
-    title: "Basis Flask-RESTful"
+    assignments:
+      - id: magic-eight-ball
+        title: "Magic eight ball"
+  - id: decorators-met-argumenten
+    title: "Decorators met argumenten"
+      #  - id: flask-restful-basis
+      #    title: "Basis Flask-RESTful"
 all_type_edges:
   - start_id: basis-reguliere-expressies
     end_id: groepen-in-reguliere-expressies
@@ -112,8 +130,14 @@ all_type_edges:
     end_id: flask-formulieren-basis
   - start_id: flask-basis
     end_id: flask-redirects
+  - start_id: flask-basis
+    end_id: flask-static
+  - start_id: args-kwargs
+    end_id: decorators-basis
   - start_id: hogere-orde-functies
     end_id: decorators-basis
+  - start_id: decorators-basis
+    end_id: decorators-met-argumenten
 any_type_edges: []
 roots: []
 node_plugins:
