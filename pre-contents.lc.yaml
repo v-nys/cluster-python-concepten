@@ -69,6 +69,24 @@ nodes:
     assignments:
       - id: code-normaliseren
         title: "Code normaliseren"
+  - id: sqlite-basis
+    title: "Basis SQLite"
+  - id: flask-basis
+    title: "Basis Flask"
+  - id: flask-static
+    title: "Static assets met Flask"
+  - id: logging-basis
+    title: "Basis logging"
+  - id: flask-redirects
+    title: "Redirects met Flask"
+  - id: flask-formulieren-basis
+    title: "Basis formulieren in Flask"
+  - id: hogere-orde-functies
+    title: "Hogere orde functies"
+  - id: decorators-basis
+    title: "Basis decorators"
+  - id: flask-restful-basis
+    title: "Basis Flask-RESTful"
 all_type_edges:
   - start_id: basis-reguliere-expressies
     end_id: groepen-in-reguliere-expressies
@@ -90,6 +108,12 @@ all_type_edges:
     end_id: libcst-basis-transformer
   - start_id: visitor-pattern
     end_id: ast-module-basis
+  - start_id: flask-basis
+    end_id: flask-formulieren-basis
+  - start_id: flask-basis
+    end_id: flask-redirects
+  - start_id: hogere-orde-functies
+    end_id: decorators-basis
 any_type_edges: []
 roots: []
 node_plugins:
