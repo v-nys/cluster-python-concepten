@@ -1,4 +1,9 @@
 nodes:
+  - id: karaktervoorstellingen
+    title: "Karaktervoorstellingen"
+    assignments:
+      - id: print-visible-ascii
+        title: "De zichtbare ASCII characters tonen"
   - id: basis-reguliere-expressies
     title: "Basis reguliere expressies"
     assignments:
