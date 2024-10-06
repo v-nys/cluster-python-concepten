@@ -9,11 +9,11 @@ nodes:
     assignments:
       - id: spelden-en-hooibergen
         title: "Spelden en hooibergen"
-  - id: groepen-in-reguliere-expressies
-    title: "Groepen in reguliere expressies"
-    assignments:
-      - id: onderdelen-emailadres
-        title: "Onderdelen van een e-mailadres"
+          #  - id: groepen-in-reguliere-expressies
+          #    title: "Groepen in reguliere expressies"
+          #    assignments:
+          #      - id: onderdelen-emailadres
+          #        title: "Onderdelen van een e-mailadres"
   - id: jinja-basics
     title: "Basis Jinja"
     assignments:
@@ -21,56 +21,56 @@ nodes:
         title: "HTML-lijst met fruit"
       - id: html-prijslijst
         title: "HTML-prijslijst"
-  - id: werken-met-paden
-    title: "Werken met paden"
-    assignments:
-      - id: oplijsten-python-files
-        title: "Oplijsten Python files"
-  - id: enumerate
-    title: "Enumerate"
-    assignments:
-      - id: fruit
-        title: "Fruitsoorten opsommen"
-  - id: list-comprehensions
-    title: "List comprehensions"
-    assignments:
-      - id: maanden
-        title: "Maanden nummeren"
-      - id: gefilterde-maanden
-        title: "Maanden filteren en nummeren"
-  - id: dictionary-comprehensions
-    title: "Dictionary comprehensions"
-    assignments:
-      - id: kwadraten
-        title: "Kwadraten koppelen"
-  - id: visitor-pattern
-    title: "Visitor pattern"
-    assignments:
-      - id: afwerken-voorbeeld
-        title: "Afwerken voorbeeldcode"
-  - id: transformer-pattern
-    title: "Transformer pattern"
-  - id: syntaxbomen-basis
-    title: "Basis syntaxbomen"
-  - id: libcst-basis-visitor
-    title: "Basis LibCST met Visitor"
-    assignments:
-      - id: zoekvolgorde-tonen
-        title: "Zoekvolgorde tonen"
-      - id: operanden-binnen-vermenigvuldiging-tonen
-        title: "Operanden binnen een vermenigvuldiging tonen"
-  - id: libcst-basis-transformer
-    title: "Basis LibCST met Transformer"
-  - id: pyspellchecker-basis
-    title: "Basis pyspellchecker"
-    assignments:
-      - id: realtime-spellcheck
-        title: "Realtime spellcheck"
-  - id: ast-module-basis
-    title: "Basis AST module"
-    assignments:
-      - id: code-normaliseren
-        title: "Code normaliseren"
+          #  - id: werken-met-paden
+          #    title: "Werken met paden"
+          #    assignments:
+          #      - id: oplijsten-python-files
+          #        title: "Oplijsten Python files"
+          #  - id: enumerate
+          #    title: "Enumerate"
+          #    assignments:
+          #      - id: fruit
+          #        title: "Fruitsoorten opsommen"
+          #  - id: list-comprehensions
+          #    title: "List comprehensions"
+          #    assignments:
+          #      - id: maanden
+          #        title: "Maanden nummeren"
+          #      - id: gefilterde-maanden
+          #        title: "Maanden filteren en nummeren"
+          #  - id: dictionary-comprehensions
+          #    title: "Dictionary comprehensions"
+          #    assignments:
+          #      - id: kwadraten
+          #        title: "Kwadraten koppelen"
+          #  - id: visitor-pattern
+          #    title: "Visitor pattern"
+          #    assignments:
+          #      - id: afwerken-voorbeeld
+          #        title: "Afwerken voorbeeldcode"
+          #  - id: transformer-pattern
+          #    title: "Transformer pattern"
+          #  - id: syntaxbomen-basis
+          #    title: "Basis syntaxbomen"
+          #  - id: libcst-basis-visitor
+          #    title: "Basis LibCST met Visitor"
+          #    assignments:
+          #      - id: zoekvolgorde-tonen
+          #        title: "Zoekvolgorde tonen"
+          #      - id: operanden-binnen-vermenigvuldiging-tonen
+          #        title: "Operanden binnen een vermenigvuldiging tonen"
+          #  - id: libcst-basis-transformer
+          #    title: "Basis LibCST met Transformer"
+      #  - id: pyspellchecker-basis
+      #    title: "Basis pyspellchecker"
+      #    assignments:
+      #      - id: realtime-spellcheck
+      #        title: "Realtime spellcheck"
+      #  - id: ast-module-basis
+      #    title: "Basis AST module"
+      #    assignments:
+      #      - id: code-normaliseren
+      #        title: "Code normaliseren"
   - id: sqlite-basis
     title: "Basis SQLite"
     assignments:
@@ -133,26 +133,26 @@ nodes:
 all_type_edges:
   - start_id: jinja-basics
     end_id: flask-jinja
-  - start_id: basis-reguliere-expressies
-    end_id: groepen-in-reguliere-expressies
-  - start_id: enumerate
-    end_id: list-comprehensions
-  - start_id: list-comprehensions
-    end_id: dictionary-comprehensions
-  - start_id: basis-reguliere-expressies
-    end_id: syntaxbomen-basis
-  - start_id: syntaxbomen-basis
-    end_id: libcst-basis-visitor
-  - start_id: visitor-pattern
-    end_id: libcst-basis-visitor
-  - start_id: visitor-pattern
-    end_id: transformer-pattern
-  - start_id: libcst-basis-visitor
-    end_id: libcst-basis-transformer
-  - start_id: transformer-pattern
-    end_id: libcst-basis-transformer
-  - start_id: visitor-pattern
-    end_id: ast-module-basis
+      #  - start_id: basis-reguliere-expressies
+      #    end_id: groepen-in-reguliere-expressies
+      #  - start_id: enumerate
+      #    end_id: list-comprehensions
+      #  - start_id: list-comprehensions
+      #    end_id: dictionary-comprehensions
+      #  - start_id: basis-reguliere-expressies
+      #    end_id: syntaxbomen-basis
+      #  - start_id: syntaxbomen-basis
+      #    end_id: libcst-basis-visitor
+      #  - start_id: visitor-pattern
+      #    end_id: libcst-basis-visitor
+      #  - start_id: visitor-pattern
+      #    end_id: transformer-pattern
+      #  - start_id: libcst-basis-visitor
+      #    end_id: libcst-basis-transformer
+      #  - start_id: transformer-pattern
+      #    end_id: libcst-basis-transformer
+      #  - start_id: visitor-pattern
+      #    end_id: ast-module-basis
   - start_id: flask-basis
     end_id: flask-formulieren-basis
   - start_id: flask-basis
