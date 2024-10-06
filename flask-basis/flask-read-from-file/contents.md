@@ -1,0 +1,1 @@
+Maak een kleine Flask applicatie die de inhoud van een bestand `pagecontents.txt` leest en deze teruggeeft wanneer de route `/` bezocht wordt. Je hoeft dit niet als een volledige HTML-pagina weer te geven, dat komt later.

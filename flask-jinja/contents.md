@@ -1,0 +1,3 @@
+Flask integreert automatisch met Jinja2. Je kan in principe andere templating engines gebruiken, maar Jinja2 is voorgeconfigureerd. Speciaal aan deze integratie is dat je in Jinja templates ook toegang hebt tot een paar speciale variabelen, zoals `config`, `request`,...
+
+Je vindt [hier](https://flask.palletsprojects.com/en/2.3.x/quickstart/#rendering-templates) meer uitleg over de integratie van Flask met Jinja.

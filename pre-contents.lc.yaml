@@ -54,9 +54,6 @@ nodes:
         title: "Zoekvolgorde tonen"
       - id: operanden-binnen-vermenigvuldiging-tonen
         title: "Operanden binnen een vermenigvuldiging tonen"
-          # previous assignment teaches same relevant concepts and is easier
-          #      - id: arithmetische-expressie-uitrekenen
-          #        title: "Manueel een arithmetische expressie uitrekenen"
   - id: libcst-basis-transformer
     title: "Basis LibCST met Transformer"
   - id: pyspellchecker-basis
@@ -76,10 +73,26 @@ nodes:
         title: "SQLite experiment"
   - id: flask-basis
     title: "Basis Flask"
+    assignments:
+      - id: flask-read-from-file
+        title: "Inhoud webpagina lezen uit bestand"
+  - id: flask-jinja
+    title: "Flask met Jinja"
+    assignments:
+      - id: flask-read-from-file
+        title: "Pagina met template lezen uit bestand"
   - id: flask-static
     title: "Static assets met Flask"
   - id: logging-basis
     title: "Basis logging"
+    assignments:
+      - id: logging-menu
+        title: "Logging demonstreren via menu"
+  - id: flask-logging
+    title: "Logging in Flask"
+    assignments:
+      - id: log-visits
+        title: "Bezoeken bijhouden"
   - id: flask-redirects
     title: "Redirects met Flask"
     assignments:
@@ -87,6 +100,9 @@ nodes:
         title: "Ga naar AP"
   - id: flask-formulieren-basis
     title: "Basis formulieren in Flask"
+    assignments:
+      - id: get-form-handler
+        title: "GET handler voor een formulier"
   - id: hogere-orde-functies
     title: "Hogere orde functies"
     assignments:
@@ -95,7 +111,10 @@ nodes:
       - id: leveranciers
         title: "leverancieers"
   - id: args-kwargs
-    title: "Args en kwargs"
+    title: "List en dictionary unpacking"
+    assignments:
+      - id: display-args-kwargs
+        title: "Weergave (keyword) argumenten"
   - id: decorators-basis
     title: "Basis decorators"
     assignments:
@@ -103,8 +122,9 @@ nodes:
         title: "Magic eight ball"
   - id: decorators-met-argumenten
     title: "Decorators met argumenten"
-      #  - id: flask-restful-basis
-      #    title: "Basis Flask-RESTful"
+    assignments:
+      - id: multicall
+        title: "Multicall"
 all_type_edges:
   - start_id: basis-reguliere-expressies
     end_id: groepen-in-reguliere-expressies
@@ -138,6 +158,12 @@ all_type_edges:
     end_id: decorators-basis
   - start_id: decorators-basis
     end_id: decorators-met-argumenten
+  - start_id: flask-basis
+    end_id: flask-jinja
+  - start_id: flask-basis
+    end_id: flask-logging
+  - start_id: logging-basis
+    end_id: flask-logging
 any_type_edges: []
 roots: []
 node_plugins:

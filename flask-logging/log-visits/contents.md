@@ -1,0 +1,3 @@
+Een zichzelf respecterende client-server applicatie houdt uitgebreide logs bij. Dit gebeurt niet met gewone print-statements (die vluchtig zijn) en ook niet met ad hoc gebruik van tekstbestanden (deels omwille van consistentie, deels omdat dat omslachtig zou werken).
+
+Kopieer je eerdere applicatie (die de inhoud van een tekstbestand uitlas) naar een file genaamd `logging_experiment.py`. Zorg ervoor dat er een info statement gedaan wordt telkens de applicatie bezocht wordt. Zorg dat er een debug statement gedaan wordt met de response body. Deze statements moeten allebei terug te vinden zijn in een file genaamd `flask_experiment.log`.

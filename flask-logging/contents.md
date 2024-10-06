@@ -1,0 +1,1 @@
+Zoals [hier](https://flask.palletsprojects.com/en/2.3.x/quickstart/#logging) toegelicht voorziet een Flask applicatie vanzelf een logger object. Je hoeft dit dus niet zelf aan te maken. Je kan het nog steeds customizen zoals een andere logger.
