@@ -178,4 +178,5 @@ node_plugins:
     require_solutions: False
 pre_cluster_plugins:
   - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_moodle_format_plugin.so"
 
