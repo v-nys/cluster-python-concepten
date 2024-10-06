@@ -131,6 +131,8 @@ nodes:
       - id: multicall
         title: "Multicall"
 all_type_edges:
+  - start_id: jinja-basics
+    end_id: flask-jinja
   - start_id: basis-reguliere-expressies
     end_id: groepen-in-reguliere-expressies
   - start_id: enumerate
