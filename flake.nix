@@ -19,7 +19,7 @@
           buildInputs = packages;
           shellHook =
             ''
-              export APPLICATION_SOURCE_DIR="/home/vincentn/Projects/logic-based-learning-paths"
+              export APPLICATION_SOURCE_DIR="/home/vincentn/Projects/logic_based_learning_paths"
               # nohup sh -c 'while inotifywait -e modify pre-contents.lc.yaml; do envsubst -i pre-contents.lc.yaml > contents.lc.yaml; done' > /dev/null 2>&1 &
             '';
         };

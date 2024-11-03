@@ -1,0 +1,211 @@
+{
+  "nodes": [
+    {
+      "id": "karaktervoorstellingen",
+      "title": "Karaktervoorstellingen",
+      "assignments": [
+        {
+          "id": "print-visible-ascii",
+          "title": "De zichtbare ASCII characters tonen"
+        }
+      ]
+    },
+    {
+      "id": "basis-reguliere-expressies",
+      "title": "Basis reguliere expressies",
+      "assignments": [
+        {
+          "id": "spelden-en-hooibergen",
+          "title": "Spelden en hooibergen"
+        }
+      ]
+    },
+    {
+      "id": "jinja-basics",
+      "title": "Basis Jinja",
+      "assignments": [
+        {
+          "id": "html-lijst-fruit",
+          "title": "HTML-lijst met fruit"
+        },
+        {
+          "id": "html-prijslijst",
+          "title": "HTML-prijslijst"
+        }
+      ]
+    },
+    {
+      "id": "sqlite-basis",
+      "title": "Basis SQLite",
+      "assignments": [
+        {
+          "id": "sqlite-experiment",
+          "title": "SQLite experiment"
+        }
+      ]
+    },
+    {
+      "id": "flask-basis",
+      "title": "Basis Flask",
+      "assignments": [
+        {
+          "id": "flask-read-from-file",
+          "title": "Inhoud webpagina lezen uit bestand"
+        }
+      ]
+    },
+    {
+      "id": "flask-jinja",
+      "title": "Flask met Jinja",
+      "assignments": [
+        {
+          "id": "flask-read-from-file",
+          "title": "Pagina met template lezen uit bestand"
+        }
+      ]
+    },
+    {
+      "id": "flask-static",
+      "title": "Static assets met Flask"
+    },
+    {
+      "id": "logging-basis",
+      "title": "Basis logging",
+      "assignments": [
+        {
+          "id": "logging-menu",
+          "title": "Logging demonstreren via menu"
+        }
+      ]
+    },
+    {
+      "id": "flask-logging",
+      "title": "Logging in Flask",
+      "assignments": [
+        {
+          "id": "log-visits",
+          "title": "Bezoeken bijhouden"
+        }
+      ]
+    },
+    {
+      "id": "flask-redirects",
+      "title": "Redirects met Flask",
+      "assignments": [
+        {
+          "id": "go-to-ap",
+          "title": "Ga naar AP"
+        }
+      ]
+    },
+    {
+      "id": "flask-formulieren-basis",
+      "title": "Basis formulieren in Flask",
+      "assignments": [
+        {
+          "id": "get-form-handler",
+          "title": "GET handler voor een formulier"
+        }
+      ]
+    },
+    {
+      "id": "hogere-orde-functies",
+      "title": "Hogere orde functies",
+      "assignments": [
+        {
+          "id": "recepten",
+          "title": "recepten"
+        },
+        {
+          "id": "leveranciers",
+          "title": "leverancieers"
+        }
+      ]
+    },
+    {
+      "id": "args-kwargs",
+      "title": "List en dictionary unpacking",
+      "assignments": [
+        {
+          "id": "display-args-kwargs",
+          "title": "Weergave (keyword) argumenten"
+        }
+      ]
+    },
+    {
+      "id": "decorators-basis",
+      "title": "Basis decorators",
+      "assignments": [
+        {
+          "id": "magic-eight-ball",
+          "title": "Magic eight ball"
+        }
+      ]
+    },
+    {
+      "id": "decorators-met-argumenten",
+      "title": "Decorators met argumenten",
+      "assignments": [
+        {
+          "id": "multicall",
+          "title": "Multicall"
+        }
+      ]
+    }
+  ],
+  "all_type_edges": [
+    {
+      "start_id": "jinja-basics",
+      "end_id": "flask-jinja"
+    },
+    {
+      "start_id": "flask-basis",
+      "end_id": "flask-formulieren-basis"
+    },
+    {
+      "start_id": "flask-basis",
+      "end_id": "flask-redirects"
+    },
+    {
+      "start_id": "flask-basis",
+      "end_id": "flask-static"
+    },
+    {
+      "start_id": "args-kwargs",
+      "end_id": "decorators-basis"
+    },
+    {
+      "start_id": "hogere-orde-functies",
+      "end_id": "decorators-basis"
+    },
+    {
+      "start_id": "decorators-basis",
+      "end_id": "decorators-met-argumenten"
+    },
+    {
+      "start_id": "flask-basis",
+      "end_id": "flask-jinja"
+    },
+    {
+      "start_id": "flask-basis",
+      "end_id": "flask-logging"
+    },
+    {
+      "start_id": "logging-basis",
+      "end_id": "flask-logging"
+    }
+  ],
+  "any_type_edges": [],
+  "roots": [],
+  "node_plugins": [
+    {
+      "path": "/home/vincentn/Projects/logic_based_learning_paths/rust-workspace/target/debug/liblblp_assignments_plugin.so",
+      "require_solutions": false
+    }
+  ],
+  "pre_cluster_plugins": [
+    {
+      "path": "/home/vincentn/Projects/logic_based_learning_paths/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+    }
+  ]
+}

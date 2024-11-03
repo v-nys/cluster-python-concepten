@@ -1,0 +1,1 @@
+Schrijf een script dat de gebruiker vraagt om de locatie van een HTML bestand. De inhoud van bestand moet dan worden opgeschoond door BeautifulSoup en geprint naar de terminal. (Door te printen naar de terminal in plaats van met een output file te werken, laat je de gebruiker de keuze om te redirecten.)

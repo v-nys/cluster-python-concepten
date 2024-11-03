@@ -1,0 +1,3 @@
+URL's zijn complexer dan we vaak aannemen, maar hun formaat is wel gestandaardiseerd. Daarom is het best om ze niet te analyseren via gewone tekstfuncties of algemene tools zoals reguliere expressies, maar wel via `urllib.parse`. Lees alvast de uitleg over de `urlparse` functie op [deze pagina](https://docs.python.org/3/library/urllib.parse.html#urllib.parse.urlparse) om een beeld te vormen.
+
+**Let op: deze library houdt rekening met alle soorten URL's, niet alleen HTTP en HTTPS. Er zijn dus onderdelen die je misschien niet kan thuisbrengen omdat ze zelden of nooit met deze protocols gebruikt worden.**

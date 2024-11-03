@@ -1,4 +1,27 @@
 nodes:
+  - id: urllibparse
+    title: "urllib.parse"
+  - id: basis-requests
+    title: "Basis Requests"
+    assignments:
+      - id: json-data-opvragen
+        title: "JSON data opvragen"
+      - id: json-data-aanmaken
+        title: "JSON data aanmaken"
+  - id: basis-click
+    title: "Basis Click"
+    assignments:
+      - id: optellen-getallen
+        title: "Getallen optellen"
+      - id: valuta-omrekenen
+        title: "Valuta omrekenen"
+  - id: basis-beautifulsoup
+    title: "Basis BeautifulSoup"
+    assignments:
+      - id: html-cleaner
+        title: "HTML opschonen"
+      - id: jpg-finder
+        title: "JPG-afbeeldingen filteren"
   - id: karaktervoorstellingen
     title: "Karaktervoorstellingen"
     assignments:
@@ -9,11 +32,11 @@ nodes:
     assignments:
       - id: spelden-en-hooibergen
         title: "Spelden en hooibergen"
-          #  - id: groepen-in-reguliere-expressies
-          #    title: "Groepen in reguliere expressies"
-          #    assignments:
-          #      - id: onderdelen-emailadres
-          #        title: "Onderdelen van een e-mailadres"
+  - id: groepen-in-reguliere-expressies
+    title: "Groepen in reguliere expressies"
+    assignments:
+      - id: onderdelen-emailadres
+        title: "Onderdelen van een e-mailadres"
   - id: jinja-basics
     title: "Basis Jinja"
     assignments:
@@ -21,56 +44,56 @@ nodes:
         title: "HTML-lijst met fruit"
       - id: html-prijslijst
         title: "HTML-prijslijst"
-          #  - id: werken-met-paden
-          #    title: "Werken met paden"
-          #    assignments:
-          #      - id: oplijsten-python-files
-          #        title: "Oplijsten Python files"
-          #  - id: enumerate
-          #    title: "Enumerate"
-          #    assignments:
-          #      - id: fruit
-          #        title: "Fruitsoorten opsommen"
-          #  - id: list-comprehensions
-          #    title: "List comprehensions"
-          #    assignments:
-          #      - id: maanden
-          #        title: "Maanden nummeren"
-          #      - id: gefilterde-maanden
-          #        title: "Maanden filteren en nummeren"
-          #  - id: dictionary-comprehensions
-          #    title: "Dictionary comprehensions"
-          #    assignments:
-          #      - id: kwadraten
-          #        title: "Kwadraten koppelen"
-          #  - id: visitor-pattern
-          #    title: "Visitor pattern"
-          #    assignments:
-          #      - id: afwerken-voorbeeld
-          #        title: "Afwerken voorbeeldcode"
-          #  - id: transformer-pattern
-          #    title: "Transformer pattern"
-          #  - id: syntaxbomen-basis
-          #    title: "Basis syntaxbomen"
-          #  - id: libcst-basis-visitor
-          #    title: "Basis LibCST met Visitor"
-          #    assignments:
-          #      - id: zoekvolgorde-tonen
-          #        title: "Zoekvolgorde tonen"
-          #      - id: operanden-binnen-vermenigvuldiging-tonen
-          #        title: "Operanden binnen een vermenigvuldiging tonen"
-          #  - id: libcst-basis-transformer
-          #    title: "Basis LibCST met Transformer"
-      #  - id: pyspellchecker-basis
-      #    title: "Basis pyspellchecker"
-      #    assignments:
-      #      - id: realtime-spellcheck
-      #        title: "Realtime spellcheck"
-      #  - id: ast-module-basis
-      #    title: "Basis AST module"
-      #    assignments:
-      #      - id: code-normaliseren
-      #        title: "Code normaliseren"
+  - id: werken-met-paden
+    title: "Werken met paden"
+    assignments:
+      - id: oplijsten-python-files
+        title: "Oplijsten Python files"
+  - id: enumerate
+    title: "Enumerate"
+    assignments:
+      - id: fruit
+        title: "Fruitsoorten opsommen"
+  - id: list-comprehensions
+    title: "List comprehensions"
+    assignments:
+      - id: maanden
+        title: "Maanden nummeren"
+      - id: gefilterde-maanden
+        title: "Maanden filteren en nummeren"
+  - id: dictionary-comprehensions
+    title: "Dictionary comprehensions"
+    assignments:
+      - id: kwadraten
+        title: "Kwadraten koppelen"
+  - id: visitor-pattern
+    title: "Visitor pattern"
+    assignments:
+      - id: afwerken-voorbeeld
+        title: "Afwerken voorbeeldcode"
+  - id: transformer-pattern
+    title: "Transformer pattern"
+  - id: syntaxbomen-basis
+    title: "Basis syntaxbomen"
+  - id: libcst-basis-visitor
+    title: "Basis LibCST met Visitor"
+    assignments:
+      - id: zoekvolgorde-tonen
+        title: "Zoekvolgorde tonen"
+      - id: operanden-binnen-vermenigvuldiging-tonen
+        title: "Operanden binnen een vermenigvuldiging tonen"
+  - id: libcst-basis-transformer
+    title: "Basis LibCST met Transformer"
+  - id: pyspellchecker-basis
+    title: "Basis pyspellchecker"
+    assignments:
+      - id: realtime-spellcheck
+        title: "Realtime spellcheck"
+  - id: ast-module-basis
+    title: "Basis AST module"
+    assignments:
+      - id: code-normaliseren
+        title: "Code normaliseren"
   - id: sqlite-basis
     title: "Basis SQLite"
     assignments:
@@ -130,29 +153,68 @@ nodes:
     assignments:
       - id: multicall
         title: "Multicall"
+  - id: counter
+    title: "Counter"
+  - id: recursieve-functies
+    title: "Recursieve functies"
+    assignments:
+      - id: spronck-9_1
+        title: "Fibonacci"
+      - id: spronck-9_2
+        title: "Fibonacci met diepte"
+      - id: spronck-9_4
+        title: "Grootste gemene deler"
+  - id: recursieve-datastructuren
+    title: "Recursieve datastructuren"
+  - id: recursieve-datastructuren-diepte-eerst-doorlopen
+    title: "Diepte-eerst zoeken"
+    assignments:
+      - id: getallenboom-doorzoeken
+        title: "Getallenboom doorzoeken"
+      - id: folder-hierarchy
+        title: "Folder hiërarchie"
+  - id: coroutines
+    title: "Coroutines (basis async en await)"
+    assignments:
+      # zie oud project 6
+      - id: async-sleep
+        title: "Asynchrone sleep"
+      # zie oud project 6, maar gebruik print ipv returnwaarde en gebruik gewoon stijgende count ipv Fib
+      - id: async-counter
+        title: "Asynchrone teller"
+  - id: gather
+    title: "Gather"
+    # gewoon await sleep gevolgd door generatie random int
+    # willen lijsten zien van resultaten
+    assignments:
+      - id: gelijktijdige-random-getallen
 all_type_edges:
+  - start_id: recursieve-functies
+    end_id: recursieve-datastructuren-diepte-eerst-doorlopen
+  - start_id: recursieve-datastructuren
+    end_id: recursieve-datastructuren-diepte-eerst-doorlopen
   - start_id: jinja-basics
     end_id: flask-jinja
-      #  - start_id: basis-reguliere-expressies
-      #    end_id: groepen-in-reguliere-expressies
-      #  - start_id: enumerate
-      #    end_id: list-comprehensions
-      #  - start_id: list-comprehensions
-      #    end_id: dictionary-comprehensions
-      #  - start_id: basis-reguliere-expressies
-      #    end_id: syntaxbomen-basis
-      #  - start_id: syntaxbomen-basis
-      #    end_id: libcst-basis-visitor
-      #  - start_id: visitor-pattern
-      #    end_id: libcst-basis-visitor
-      #  - start_id: visitor-pattern
-      #    end_id: transformer-pattern
-      #  - start_id: libcst-basis-visitor
-      #    end_id: libcst-basis-transformer
-      #  - start_id: transformer-pattern
-      #    end_id: libcst-basis-transformer
-      #  - start_id: visitor-pattern
-      #    end_id: ast-module-basis
+  - start_id: basis-reguliere-expressies
+    end_id: groepen-in-reguliere-expressies
+  - start_id: enumerate
+    end_id: list-comprehensions
+  - start_id: list-comprehensions
+    end_id: dictionary-comprehensions
+  - start_id: basis-reguliere-expressies
+    end_id: syntaxbomen-basis
+  - start_id: syntaxbomen-basis
+    end_id: libcst-basis-visitor
+  - start_id: visitor-pattern
+    end_id: libcst-basis-visitor
+  - start_id: visitor-pattern
+    end_id: transformer-pattern
+  - start_id: libcst-basis-visitor
+    end_id: libcst-basis-transformer
+  - start_id: transformer-pattern
+    end_id: libcst-basis-transformer
+  - start_id: visitor-pattern
+    end_id: ast-module-basis
   - start_id: flask-basis
     end_id: flask-formulieren-basis
   - start_id: flask-basis
@@ -171,6 +233,8 @@ all_type_edges:
     end_id: flask-logging
   - start_id: logging-basis
     end_id: flask-logging
+  - start_id: coroutines
+    end_id: gather
 any_type_edges: []
 roots: []
 node_plugins:
@@ -178,5 +242,4 @@ node_plugins:
     require_solutions: False
 pre_cluster_plugins:
   - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_moodle_format_plugin.so"
 
