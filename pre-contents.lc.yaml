@@ -1,5 +1,7 @@
 # yaml-language-server: $schema=./cluster_schema.json
 nodes:
+  - id: annotated
+    title: "Annotated"
   - id: fastapi-hello-world
     title: "Hello World in FastAPI"
   - id: fastapi-request-body # hier nog zonder Pydantic!
@@ -8,6 +10,9 @@ nodes:
       - id: uittesten-via-externe-tool
   - id: pydantic
     title: "Pydantic"
+    assignments:
+      - id: geldige-leeftijd
+      - id: geneste-modellen
   - id: fastapi-automatische-docs
     title: "Automatische documentatie"
   - id: urllibparse
@@ -202,6 +207,10 @@ nodes:
   - id: dependency-injection-in-fastapi
     title: "Dependency injection in FastAPI"
 all_type_edges:
+  - start_id: annotated
+    end_id: dependency-injection-in-fastapi
+  - start_id: annotated # omdat er een oefening Pydantic met validator is
+    end_id: pydantic
   - start_id: coroutines
     end_id: fastapi-hello-world
   - start_id: pydantic
