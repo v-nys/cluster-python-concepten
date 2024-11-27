@@ -1,0 +1,3 @@
+Start het voorbeeld van FastAPI op en controleer dat je items uit de database kan lezen met behulp van een tool zoals cURL, Thunder Client, Postman,...
+
+Je hoeft hier niets in te dienen.

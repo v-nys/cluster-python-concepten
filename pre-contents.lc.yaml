@@ -1,4 +1,15 @@
+# yaml-language-server: $schema=./cluster_schema.json
 nodes:
+  - id: fastapi-hello-world
+    title: "Hello World in FastAPI"
+  - id: fastapi-request-body # hier nog zonder Pydantic!
+    title: "Request body"
+    assignments:
+      - id: uittesten-via-externe-tool
+  - id: pydantic
+    title: "Pydantic"
+  - id: fastapi-automatische-docs
+    title: "Automatische documentatie"
   - id: urllibparse
     title: "urllib.parse"
   - id: basis-requests
@@ -94,6 +105,8 @@ nodes:
     assignments:
       - id: code-normaliseren
         title: "Code normaliseren"
+  - id: sqlmodel-basis
+    title: "Basis SQLModel"
   - id: sqlite-basis
     title: "Basis SQLite"
     assignments:
@@ -176,19 +189,31 @@ nodes:
   - id: coroutines
     title: "Coroutines (basis async en await)"
     assignments:
-      # zie oud project 6
       - id: async-sleep
         title: "Asynchrone sleep"
-      # zie oud project 6, maar gebruik print ipv returnwaarde en gebruik gewoon stijgende count ipv Fib
       - id: async-counter
         title: "Asynchrone teller"
   - id: gather
     title: "Gather"
-    # gewoon await sleep gevolgd door generatie random int
-    # willen lijsten zien van resultaten
     assignments:
       - id: gelijktijdige-random-getallen
+  - id: dependency-injection-algemeen
+    title: "Dependency injection (algemeen perspectief)"
+  - id: dependency-injection-in-fastapi
+    title: "Dependency injection in FastAPI"
 all_type_edges:
+  - start_id: coroutines
+    end_id: fastapi-hello-world
+  - start_id: pydantic
+    end_id: sqlmodel-basis
+  - start_id: sqlite-basis
+    end_id: sqlmodel-basis
+  - start_id: dependency-injection-algemeen
+    end_id: dependency-injection-in-fastapi
+  - start_id: fastapi-hello-world
+    end_id: fastapi-request-body
+  - start_id: fastapi-request-body
+    end_id: fastapi-automatische-docs
   - start_id: recursieve-functies
     end_id: recursieve-datastructuren-diepte-eerst-doorlopen
   - start_id: recursieve-datastructuren
@@ -238,8 +263,9 @@ all_type_edges:
 any_type_edges: []
 roots: []
 node_plugins:
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_assignments_plugin.so"
-    require_solutions: False
+  # note: these are env variables visible to the executable, not necessarily here!
+  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_assignments_plugin.so"
+    require_model_solutions: False
 pre_cluster_plugins:
-  - path: "$APPLICATION_SOURCE_DIR/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
-
+  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
+  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_yaml_schema_generation_plugin.so"

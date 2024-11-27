@@ -8,19 +8,15 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
-
-        packages = with pkgs; [
-          envsubst # to enable tests which use absolute paths
-          inotify-tools
-        ];
       in
       {
         devShell = pkgs.mkShell {
-          buildInputs = packages;
           shellHook =
             ''
-              export APPLICATION_SOURCE_DIR="/home/vincentn/Projects/logic_based_learning_paths"
-              # nohup sh -c 'while inotifywait -e modify pre-contents.lc.yaml; do envsubst -i pre-contents.lc.yaml > contents.lc.yaml; done' > /dev/null 2>&1 &
+              if [ -z ''${LBLP_SOURCE_DIR} ]; then
+                echo "The environment variable LBLP_SOURCE_DIR must be defined. Set it to the directory containing the LBLP source code."
+                exit 1
+              fi
             '';
         };
       });

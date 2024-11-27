@@ -1,3 +1,4 @@
 .direnv
 *.html
 contents.lc.yaml
+cluster_schema.json
