@@ -1,5 +1,7 @@
 # yaml-language-server: $schema=./cluster_schema.json
 nodes:
+  - id: security-in-fastapi
+    title: "Security in FastAPI"
   - id: annotated
     title: "Annotated"
   - id: fastapi-hello-world
@@ -207,6 +209,12 @@ nodes:
   - id: dependency-injection-in-fastapi
     title: "Dependency injection in FastAPI"
 all_type_edges:
+  - start_id: pydantic
+    end_id: security-in-fastapi
+  - start_id: fastapi-hello-world
+    end_id: dependency-injection-in-fastapi
+  - start_id: dependency-injection-in-fastapi
+    end_id: security-in-fastapi
   - start_id: annotated
     end_id: dependency-injection-in-fastapi
   - start_id: annotated # omdat er een oefening Pydantic met validator is
