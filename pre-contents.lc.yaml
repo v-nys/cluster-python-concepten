@@ -1,4 +1,4 @@
-# yaml-language-server: $$schema=./cluster_schema.json
+# yaml-language-server: $schema=./cluster_schema.json
 nodes:
   - id: security-in-fastapi
     title: "Security in FastAPI"
