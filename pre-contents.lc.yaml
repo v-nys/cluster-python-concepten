@@ -281,8 +281,10 @@ any_type_edges: []
 roots: []
 node_plugins:
   # note: these are env variables visible to the executable, not necessarily here!
-  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_assignments_plugin.so"
-    require_model_solutions: False
-pre_cluster_plugins:
-  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_markdown_rendering_plugin.so"
-  - path: "${LBLP_SOURCE_DIR}/rust-workspace/target/debug/liblblp_yaml_schema_generation_plugin.so"
+  - path: "/home/vincentn/Projects/lblp-assignments-plugin-extism/target/wasm32-wasi/debug/lblp_assignments_plugin.wasm"
+cluster_plugins:
+  - path: "/home/vincentn/Projects/lblp-markdown-plugin-extism/target/wasm32-wasi/debug/lblp_markdown_plugin.wasm"
+  # input_extension: "md"
+  # output_extension: "mdhtml"
+  # output_extension: "mdhtml"
+    
