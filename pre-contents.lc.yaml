@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=./cluster_schema.json
+# yaml-language-server: $$schema=./cluster_schema.json
 nodes:
   - id: security-in-fastapi
     title: "Security in FastAPI"
@@ -281,9 +281,9 @@ any_type_edges: []
 roots: []
 node_plugins:
   # note: these are env variables visible to the executable, not necessarily here!
-  - path: "/home/vincentn/Projects/lblp-assignments-plugin-extism/target/wasm32-wasi/debug/lblp_assignments_plugin.wasm"
-cluster_plugins:
-  - path: "/home/vincentn/Projects/lblp-markdown-plugin-extism/target/wasm32-wasi/debug/lblp_markdown_plugin.wasm"
+  - path: "/home/vincentn/Projects/lblp-assignments-plugin/target/wasm32-wasip1/debug/lblp_assignments_plugin.wasm"
+cluster_plugins: []
+# - path: "/home/vincentn/Projects/lblp-markdown-plugin-extism/target/wasm32-wasi/debug/lblp_markdown_plugin.wasm"
   # input_extension: "md"
   # output_extension: "mdhtml"
   # output_extension: "mdhtml"
