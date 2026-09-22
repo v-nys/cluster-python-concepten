@@ -1,5 +1,4 @@
 .direnv
 *.html
 *.mdhtml
-contents.lc.yaml
 cluster_schema.json
